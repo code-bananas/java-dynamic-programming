@@ -6,32 +6,27 @@ import java.util.List;
 public class DigitSwap {
 
     public boolean calculate(int[] numbers){
-        boolean hasSwappedNumber = false;
+        boolean hasFixedNumber = false;
 
-        for(int i = 0; i < numbers.length -1; i++){
+        for(int i = 0; i < numbers.length; i++){
+            if(i + 1 == numbers.length) break;
             int currentNumber = numbers[i];
             int nextNumber = numbers[i + 1];
+            boolean hasPreviousNumber = i-1 >= 0;
 
-            if(currentNumber >= nextNumber && hasSwappedNumber == false){
-                hasSwappedNumber = true;
+            if(currentNumber >= nextNumber && hasFixedNumber == false){
                 String currentNumberString = Integer.valueOf(currentNumber).toString();
-                boolean foundGoodNumber = false;
+                int[] newNumbers = this.charCombinations(currentNumberString);
 
-                for(int x = 1; x < currentNumberString.length() - x; x ++){
-                    int[] newNumbers = this.charCombinations(currentNumberString);
-
-                    for(int c = 0; c < newNumbers.length; c ++){
-
-                        if(newNumbers[c] < nextNumber) {
-                            foundGoodNumber = true;
-                            break;
-                        }
+                for(int number : newNumbers){
+                    if(number < nextNumber && (hasPreviousNumber == false || hasPreviousNumber && number > numbers[i-1])) {
+                        hasFixedNumber = true;
+                        break;
                     }
-                    if(foundGoodNumber == true) break;
                 }
 
-                if(foundGoodNumber == false) return false;
-            } else if(currentNumber >= nextNumber && hasSwappedNumber == true){
+                if(hasFixedNumber == false) return false;
+            } else if(currentNumber >= nextNumber && hasFixedNumber == true){
                 return false;
             };
         }
