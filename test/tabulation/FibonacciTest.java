@@ -1,12 +1,12 @@
+package tabulation;
+
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
-
-class FibonacciTabulationTest {
+class FibonacciTest {
         @Test
         void calculateFibonacciResultForOneWillBeOne() {
-            FibonacciTabulation fibonacciTabulation = new FibonacciTabulation();
+            Fibonacci fibonacciTabulation = new Fibonacci();
 
             long result = fibonacciTabulation.calculate(1);
 
@@ -15,7 +15,7 @@ class FibonacciTabulationTest {
 
         @Test
         void calculateFibonacciResultForThreeWillBeTwo() {
-            FibonacciTabulation fibonacciTabulation = new FibonacciTabulation();
+            Fibonacci fibonacciTabulation = new Fibonacci();
 
             long result = fibonacciTabulation.calculate(3);
 
@@ -24,7 +24,7 @@ class FibonacciTabulationTest {
 
         @Test
         void calculateFibonacciResultForSevenWillBeThirteen() {
-            FibonacciTabulation fibonacciTabulation = new FibonacciTabulation();
+            Fibonacci fibonacciTabulation = new Fibonacci();
 
             long result = fibonacciTabulation.calculate(7);
 
@@ -33,7 +33,7 @@ class FibonacciTabulationTest {
 
         @Test
         void calculateFibonacciResultForTwentyWillBe6765() {
-            FibonacciTabulation fibonacciTabulation = new FibonacciTabulation();
+            Fibonacci fibonacciTabulation = new Fibonacci();
 
             long result = fibonacciTabulation.calculate(20);
 
@@ -42,7 +42,7 @@ class FibonacciTabulationTest {
 
         @Test //22 seconds
         void calculateFibonacciResultForFiftyWillBe12586269025() {
-            FibonacciTabulation fibonacciTabulation = new FibonacciTabulation();
+            Fibonacci fibonacciTabulation = new Fibonacci();
 
             long result = fibonacciTabulation.calculate(50);
 

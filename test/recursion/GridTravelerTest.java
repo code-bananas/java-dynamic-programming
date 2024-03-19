@@ -1,3 +1,7 @@
+package recursion;
+
+import recursion.GridTraveler;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class GridTravelerTest {

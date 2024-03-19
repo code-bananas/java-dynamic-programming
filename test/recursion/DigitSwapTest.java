@@ -1,4 +1,7 @@
+package recursion;
+
 import org.junit.jupiter.api.Test;
+import recursion.DigitSwap;
 
 import static org.junit.jupiter.api.Assertions.*;
 

@@ -1,3 +1,5 @@
+package recursion;
+
 import java.util.HashMap;
 
 public class GridTraveler {

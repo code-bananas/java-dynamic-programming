@@ -1,3 +1,7 @@
+package recursion;
+
+import recursion.CanSum;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class CanSumTest {

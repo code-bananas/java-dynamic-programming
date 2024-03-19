@@ -1,3 +1,5 @@
+package recursion;
+
 public class HowSum {
 
     public int[] calculate(int targetSum, int[] numbers){

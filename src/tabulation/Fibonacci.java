@@ -1,6 +1,6 @@
-import java.util.Arrays;
+package tabulation;
 
-public class FibonacciTabulation {
+public class Fibonacci {
 
     public long calculate(int sequence) {
         if (sequence == 1) return 1;

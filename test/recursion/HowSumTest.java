@@ -9,7 +9,7 @@
 //        int targetSum = 0;
 //        int[] numbers = {};
 //
-//        HowSum howSum = new HowSum();
+//        recursion.HowSum howSum = new recursion.HowSum();
 //
 //        int[] result = howSum.calculate(targetSum, numbers);
 //        assertTrue(result);
@@ -20,7 +20,7 @@
 //        int targetSum = -1;
 //        int[] numbers = {};
 //
-//        HowSum howSum = new HowSum();
+//        recursion.HowSum howSum = new recursion.HowSum();
 //
 //        int[] result = howSum.calculate(targetSum, numbers);
 //        assertFalse(result);
@@ -31,7 +31,7 @@
 //        int targetSum = 7;
 //        int[] numbers = {2, 3};
 //
-//        HowSum howSum = new HowSum();
+//        recursion.HowSum howSum = new recursion.HowSum();
 //
 //        int[] result = howSum.calculate(targetSum, numbers);
 //        assertTrue(result);
@@ -42,7 +42,7 @@
 //        int targetSum = 7;
 //        int[] numbers = {5,3,4,7};
 //
-//        HowSum howSum = new HowSum();
+//        recursion.HowSum howSum = new recursion.HowSum();
 //
 //        int[] result = howSum.calculate(targetSum, numbers);
 //        assertTrue(result);
@@ -53,7 +53,7 @@
 //        int targetSum = 7;
 //        int[] numbers = {2,4};
 //
-//        HowSum howSum = new HowSum();
+//        recursion.HowSum howSum = new recursion.HowSum();
 //
 //        int[] result = howSum.calculate(targetSum, numbers);
 //        assertFalse(result);
@@ -64,7 +64,7 @@
 //        int targetSum = 8;
 //        int[] numbers = {2,3,5};
 //
-//        HowSum howSum = new HowSum();
+//        recursion.HowSum howSum = new recursion.HowSum();
 //
 //        int[] result = howSum.calculate(targetSum, numbers);
 //        assertTrue(result);
@@ -75,7 +75,7 @@
 //        int targetSum = 300;
 //        int[] numbers = {7, 14};
 //
-//        HowSum howSum = new HowSum();
+//        recursion.HowSum howSum = new recursion.HowSum();
 //
 //        int[] result = howSum.calculate(targetSum, numbers);
 //        assertFalse(result);
